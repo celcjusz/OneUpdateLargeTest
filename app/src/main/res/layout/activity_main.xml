@@ -29,20 +29,15 @@
             android:textColor="#FF0000"
             android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/textView2"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Upgrade app to see more"
-            android:textColor="#FFFAFA" />
+            android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="nothing to see here"
-            app:srcCompat="@drawable/nothing" />
-
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
